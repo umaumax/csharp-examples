@@ -11,12 +11,14 @@ class Chip {
     public Chip() {
         type = ChipType.Wall;
     }
+    public bool IsWall() { return type == ChipType.Wall; }
+    public bool IsFloor() { return type == ChipType.RoomFloor || type == ChipType.RoadFloor; }
 }
 class Field {
-    private int x;
-    private int y;
+    public int x { get; private set; }
+    public int y { get; private set; }
     // WARN: use List?
-    private Chip[,] chip_map;
+    public Chip[,] chip_map { get; private set; }
 
     public Field(int x, int y) {
         Init(x, y);
