@@ -6,9 +6,9 @@ $ mcs hello.cs
 $ mono hello.exe
 ```
 
-## how to start
+## how to prepare console app
 ``` bash
-cd mystery-dungeon
+cd hogehoge
 dotnet new console
 dotnet build
 dotnet run
