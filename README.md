@@ -2,8 +2,8 @@
 
 ## hello wolrd
 ``` bash
-$ mcs hello.cs
-$ mono hello.exe
+mcs hello.cs
+mono hello.exe
 ```
 
 ## how to prepare console app
